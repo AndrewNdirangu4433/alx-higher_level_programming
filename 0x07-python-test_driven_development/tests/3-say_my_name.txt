@@ -1,0 +1,23 @@
+#This is a test document for the module <3-say_my_name.py> function <say_my_name>
+
+>>> msg = __import__('3-say_my_name').say_my_name
+>>> msg("Andrew", "Ndirangu")
+My name is Andrew Ndirangu
+>>> msg("Andrew")
+My name is Andrew
+>>> msg(1, "Ndirangu")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 22, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
+>>> msg("Andrew", 2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 24, in say_my_name
+    raise TypeError("last_name must be a string")
+TypeError: last_name must be a string
+>>> msg()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
