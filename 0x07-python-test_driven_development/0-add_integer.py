@@ -30,4 +30,3 @@ def add_integer(a, b=98):
         return int(a) + int(b)
     if isinstance(a, float) and isinstance(b, int):
         return int(a) + int(b)
-
