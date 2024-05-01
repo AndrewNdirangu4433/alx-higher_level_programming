@@ -5,6 +5,8 @@ after each of these characters: ., ? and :
 """
 
 
+import re
+
 def text_indentation(text):
     """
     This is a function that prints a text with 2 new lines,
@@ -19,7 +21,9 @@ def text_indentation(text):
     Raises:
     TypeError: raise a TypeError if text is not a string.
     """
-    symbs = [".", ",", "?", ":"]
     if not isinstance(text, str):
         raise TypeError("text must be a string")
+
+    for delimeter in "?:.":
+        print((delimeter + "\n\n"))
 
